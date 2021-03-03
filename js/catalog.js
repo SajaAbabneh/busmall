@@ -15,6 +15,7 @@ function populateForm() {
       const optionElement=document.createElement('option');
       selectElement.appendChild(optionElement);
       optionElement.textContent=Product.allProducts[i].name;
+     
 
   }
 
