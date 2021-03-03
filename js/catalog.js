@@ -62,7 +62,9 @@ function updateCartPreview() {
   
   // TODO: Add a new element to the cartContents div with that information
   let newElement = document.getElementById('cartContents');
-  newElement.textContent= `${selectItem} , ${quantity}`;
+  for(let i =0 ; i < cart.items.length ; i ++){
+    newElement.textContent= `${cart.items[i].product} , ${cart.items[i].quantity}`;
+  }
 
 }
 
